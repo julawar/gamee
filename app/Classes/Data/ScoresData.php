@@ -5,6 +5,12 @@ namespace App\Classes\Data;
 
 class ScoresData extends Data
 {
+    /**
+     * @param int $id_game
+     * @param int $id_player
+     * @param int $score
+     * @return array|bool
+     */
     public function saveScore(int $id_game, int $id_player, int $score)
     {
         $data = [
