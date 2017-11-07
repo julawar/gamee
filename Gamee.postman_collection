@@ -1,0 +1,39 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Gamee",
+		"_postman_id": "c521f7b6-3d6d-f23e-eb90-373d6fe89f7e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createScore",
+			"request": {
+				"url": "http://localhost:8000/scores",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"saveScore\",\n    \"id\": 1,\n    \"params\": {\n        \"id_game\": 0,\n        \"id_player\": 12,\n        \"score\": -30\n    }\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getTopPlayers",
+			"request": {
+				"url": "http://localhost:8000/leaderboards",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"getTopPlayers\",\n    \"id\": 1,\n    \"params\": {\n        \"id_game\": 1,\n        \"limit\":10\n    }\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
