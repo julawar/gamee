@@ -1,0 +1,22 @@
+{
+    "name": "milos/gamee",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Milos Kratochvil",
+            "email": "julawar@seznam.cz"
+        }
+    ],
+    "require": {
+        "nette/di": "^2.4",
+        "jsonrpc/jsonrpc": "^1.0",
+        "predis/predis": "^1.1",
+        "altorouter/altorouter": "dev-master",
+        "particle/validator": "^2.0@dev"
+    },
+    "autoload": {
+        "classmap": ["app"]
+    },
+    "minimum-stability": "dev"
+}

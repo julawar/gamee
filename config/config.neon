@@ -1,0 +1,14 @@
+services:
+    - AltoRouter
+    - Particle\Validator\Validator
+    - App\Application
+    - App\Controllers\ScoresController
+    - App\Controllers\LeaderboardsController
+    - App\Classes\Data\ScoresData
+    - App\Classes\Data\LeaderboardsData
+    - Predis\Client([
+                                'scheme': 'tcp',
+                                'host': 'localhost',
+                                'port': 6379,
+                            ])
+
